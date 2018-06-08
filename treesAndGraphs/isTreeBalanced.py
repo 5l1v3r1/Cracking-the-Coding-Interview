@@ -1,4 +1,17 @@
-from treesAndGraphs.tree import Node
+# Implement a function to check if a tree is balanced For the purposes of this question, a balanced tree is de ned to be a tree such that no two leaf nodes di er in distance from the root by more than one
+
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.left = None
+        self.right = None
+
+    def addRight(self, node):
+        self.right = node
+
+    def addLeft(self, node):
+        self.left = node
+
 
 def maxDepth(root):
     if root == None:
